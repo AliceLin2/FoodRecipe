@@ -1,11 +1,10 @@
 import React, {useState} from "react";
-import useQuery from "./hooks/useQuery";
+import useQuery from "../hooks/useQuery";
 import MenuList from "./MenuList";
 import Filter from "./Filter"
 import Search from "./Search"
 import RecipeDetail from "./RecipeDetail"
 
-const apiKey = '941205c952d74f858eb632f8424e9857'
 
 function FoodFromAPI() {
   const [searchTerm, setSearchTerm] = useState("");
@@ -27,7 +26,6 @@ function FoodFromAPI() {
     .then((r) => r.json())
     .then((data) => {
         setSelectedFood(data);
-        console.log(data)
     });
   }
 

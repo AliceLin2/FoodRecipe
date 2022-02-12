@@ -4,7 +4,7 @@ function Home() {
   return (
     <div>
       <h1>Plenty of Land</h1>
-      <img src="../public/hotpot.jpg" alt="food"/>
+      <img src="hotpot.jpg" alt="food"/>
     </div>
   );
 }
