@@ -4,17 +4,20 @@ import PortfolioList from "./PortfolioList"
 function MyFoodPortfolio() {
   const [food, setFood] = useState([])
 
-  useEffect(()=>{
+  function fetchFood(){
     fetch(`http://localhost:3000/food`)
     .then((r) => r.json())
     .then((data) => {
       setFood(data);
     });
+  }
+  useEffect(()=>{
+    fetchFood()
   },[])
 
   return (
     <div>
-        <PortfolioList food={food}/>
+        <PortfolioList food={food} onFetchFood={fetchFood}/>
     </div>
   ); 
 }

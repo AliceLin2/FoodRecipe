@@ -135,7 +135,7 @@
           "original": "1 container vanilla yogurt"
         }
       ],
-      "rating": 8,
+      "rating": 9,
       "category": "dessert",
       "id": 3
     },
@@ -177,7 +177,7 @@
         }
       ],
       "category": "soup",
-      "rating": "9",
+      "rating": 8,
       "id": 4
     },
     {
@@ -254,8 +254,8 @@
         }
       ],
       "category": "steak",
-      "rating": 8,
-      "id": 6
+      "rating": 7,
+      "id": 5
     }
   ]
 }

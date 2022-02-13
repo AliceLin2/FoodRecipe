@@ -1,11 +1,11 @@
 import React, {useState} from "react";
-import {useParams} from "react-router-dom"
+import {useParams, useHistory} from "react-router-dom"
 
-function Recipe({food}) {
+function Recipe({food, onFetchFood}) {
   const [editMode, setEditMode] = useState(false)
-  const {recipeId} = useParams() 
+  const {recipeId} = useParams()
+  const history = useHistory() 
   const [newRating, setNewRating] = useState(0)
-
   const match = food.filter(f=>{return f.id === parseInt(recipeId)})[0]
 
   const ingredientList = match.ingredients.map(i=>{
@@ -29,13 +29,19 @@ function Recipe({food}) {
           .then(r=>r.json())
           .then(data=>{
               setEditMode(!editMode)
-            })
+              onFetchFood()
+          })
       }
   }
 
   function handleDelete(){
     fetch(`http://localhost:3000/food/${match.id}`,{
         method:"DELETE"
+    })
+    .then(r=>r.json())
+    .then(data=>{
+        history.push("/myfoodportfolio")
+        onFetchFood()
     })
   }
 
