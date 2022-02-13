@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 const apiKey = '941205c952d74f858eb632f8424e9857'
 
 function useQuery() {
-  const [category, setCategory] = useState("");
+  const [category, setCategory] = useState("burger");
   const [food, setFood] = useState([]);
 
   useEffect(() => {
@@ -15,6 +15,7 @@ function useQuery() {
 
   return {
     food: food,
+    category,
     setCategory
   };
 }

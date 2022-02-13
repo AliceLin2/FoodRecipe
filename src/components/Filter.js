@@ -8,7 +8,6 @@ function Filter({handleFilter}) {
         placeholder="categories"
         onChange={handleFilter}
       >
-        <option>No Filter</option>
         <option value="burger">burger</option>
         <option value="pasta">pasta</option>
         <option value="noodle">noodle</option>

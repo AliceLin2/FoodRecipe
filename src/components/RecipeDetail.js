@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 
-function RecipeDetail({selectedFood}) {
+function RecipeDetail({selectedFood, category}) {
+  const [rating, setRating] = useState(10)
   let ingredients = []
   selectedFood.extendedIngredients.map(i=>{
     ingredients.push({"name":i.name, "original":i.original})
@@ -21,12 +22,13 @@ function RecipeDetail({selectedFood}) {
       body: JSON.stringify({
         "title": selectedFood.title,
         "image": selectedFood.image,
-        "ingredients": ingredients
+        "ingredients": ingredients,
+        "category": category,
+        "rating": rating
       })
     })
     .then(res=>res.json())
     .then(data=>{
-        console.log(data)
         console.log(e.target.value)
     })
   }
@@ -39,7 +41,7 @@ function RecipeDetail({selectedFood}) {
       </ul>
       <form onSubmit={handleCollect}>
         <label >From 1 to 10: choose most likely you would try this recipe!</label>
-        <select name="rating">
+        <select name="rating" value={rating} onChange={e=>setRating(e.target.value)}>
           <option value="1">1</option>
           <option value="2">2</option>
           <option value="3">3</option>

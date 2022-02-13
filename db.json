@@ -37,6 +37,8 @@
           "original": "Pomi strained tomato sauce (26 oz.)"
         }
       ],
+      "rating": "7",
+      "category": "pasta",
       "id": 1
     },
     {
@@ -104,7 +106,79 @@
           "original": "1 large white onion, peeled and cut into 1/2-3/4-inch slices (keep the slices intact)"
         }
       ],
+      "rating": "8",
+      "category": "steak",
       "id": 2
+    },
+    {
+      "title": "Berry Banana Breakfast Smoothie",
+      "image": "https://spoonacular.com/recipeImages/715497-556x370.jpg",
+      "ingredients": [
+        {
+          "name": "banana",
+          "original": "¼ cup mashed banana"
+        },
+        {
+          "name": "graham cracker crumbs",
+          "original": "2 tbsp graham cracker crumbs"
+        },
+        {
+          "name": "soy milk",
+          "original": "1 cup soy milk"
+        },
+        {
+          "name": "strawberries",
+          "original": "½ cup strawberries"
+        },
+        {
+          "name": "vanilla yogurt",
+          "original": "1 container vanilla yogurt"
+        }
+      ],
+      "rating": "9",
+      "category": "dessert",
+      "id": 3
+    },
+    {
+      "title": "Asian Noodle Soup",
+      "image": "https://spoonacular.com/recipeImages/632853-556x370.jpg",
+      "ingredients": [
+        {
+          "name": "carrots",
+          "original": "4 large carrots, peeled and diced"
+        },
+        {
+          "name": "celery",
+          "original": "4 stalks celery, diced"
+        },
+        {
+          "name": "dijon mustard",
+          "original": "1/4 cup dijon mustard"
+        },
+        {
+          "name": "green onion",
+          "original": "1/2 cup sliced green onion"
+        },
+        {
+          "name": "portobello mushroom cap",
+          "original": "1 portobello mushroom cap, cleaned and diced"
+        },
+        {
+          "name": "ramen noodles",
+          "original": "4 pkg oriental flavored ramen noodles"
+        },
+        {
+          "name": "soy sauce",
+          "original": "cup soy sauce"
+        },
+        {
+          "name": "water",
+          "original": "3 tablespoons cold water"
+        }
+      ],
+      "category": "soup",
+      "rating": "9",
+      "id": 4
     }
   ]
 }

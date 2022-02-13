@@ -9,12 +9,10 @@ import RecipeDetail from "./RecipeDetail"
 function FoodFromAPI() {
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedFood, setSelectedFood] = useState([]);
-  const {food, setCategory } = useQuery();
+  const {food, category, setCategory } = useQuery();
 
   function handleFilter(e) {
-    e.target.value === "No Filter"
-      ? setCategory("")
-      : setCategory(e.target.value);
+      setCategory(e.target.value);
   }
 
   function handleSearch(e) {
@@ -33,7 +31,7 @@ function FoodFromAPI() {
     <div>
       <Filter handleFilter={handleFilter}/>
       <Search handleSearch={handleSearch}/>
-      {selectedFood.length !== 0 ? (<RecipeDetail selectedFood={selectedFood}/>) : null}
+      {selectedFood.length !== 0 ? (<RecipeDetail selectedFood={selectedFood} category={category}/>) : null}
       <MenuList
         food={food}
         searchTerm={searchTerm}
