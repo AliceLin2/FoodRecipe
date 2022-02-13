@@ -2,6 +2,7 @@ import React from "react";
 import Food from "./Food"
 
 function MenuList({food, searchTerm, onSelectFood}) {
+
   function allFood() {
     if (!!searchTerm) {
       return food.map((f) => {

@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 
-function RecipeDetail({selectedFood, category, onShowDetail}) {
+function RecipeDetail({selectedFood, onShowDetail}) {
   const [rating, setRating] = useState(10)
   let ingredients = []
   selectedFood.extendedIngredients.map(i=>{
@@ -23,7 +23,6 @@ function RecipeDetail({selectedFood, category, onShowDetail}) {
         "title": selectedFood.title,
         "image": selectedFood.image,
         "ingredients": ingredients,
-        "category": category,
         "rating": rating
       })
     })

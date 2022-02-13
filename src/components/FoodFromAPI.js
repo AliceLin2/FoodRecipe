@@ -5,13 +5,12 @@ import Filter from "./Filter"
 import Search from "./Search"
 import RecipeDetail from "./RecipeDetail"
 
-const apiKey = '941205c952d74f858eb632f8424e9857'
 
 function FoodFromAPI() {
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedFood, setSelectedFood] = useState([]);
   const [showDetail, setShowDetail] = useState(false)
-  const {food, category, setCategory } = useQuery();
+  const {food, setCategory } = useQuery();
 
   useEffect(()=>{
     window.scrollTo(0,0)
@@ -22,7 +21,8 @@ function FoodFromAPI() {
   }
 
   function handleSearch(e) {
-    setSearchTerm(e.target.value.toLowerCase());
+    setSearchTerm(e.target.value.toLowerCase())
+    setTimeout(()=>setCategory(searchTerm),1000);
   }
 
   function handleSelectFood(id){
@@ -38,7 +38,7 @@ function FoodFromAPI() {
     <div>
       <Filter handleFilter={handleFilter}/>
       <Search handleSearch={handleSearch}/>
-      {showDetail ? (<RecipeDetail selectedFood={selectedFood} category={category} onShowDetail={setShowDetail}/>) : null}
+      {showDetail ? (<RecipeDetail selectedFood={selectedFood} onShowDetail={setShowDetail}/>) : null}
       <MenuList
         food={food}
         searchTerm={searchTerm}

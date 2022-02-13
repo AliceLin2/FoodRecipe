@@ -38,7 +38,6 @@
         }
       ],
       "rating": 9,
-      "category": "pasta",
       "id": 1
     },
     {
@@ -106,8 +105,7 @@
           "original": "1 large white onion, peeled and cut into 1/2-3/4-inch slices (keep the slices intact)"
         }
       ],
-      "rating": "8",
-      "category": "steak",
+      "rating": 8,
       "id": 2
     },
     {
@@ -136,7 +134,6 @@
         }
       ],
       "rating": 9,
-      "category": "dessert",
       "id": 3
     },
     {
@@ -176,7 +173,6 @@
           "original": "3 tablespoons cold water"
         }
       ],
-      "category": "soup",
       "rating": 8,
       "id": 4
     },
@@ -253,62 +249,8 @@
           "original": "1/8 teaspoon freshly ground black pepper"
         }
       ],
-      "category": "steak",
       "rating": 7,
       "id": 5
-    },
-    {
-      "title": "Falafel Burger",
-      "image": "https://spoonacular.com/recipeImages/642539-556x370.png",
-      "ingredients": [
-        {
-          "name": "canned chickpeas",
-          "original": "540 ml can of chickpeas, drained and rinsed"
-        },
-        {
-          "name": "tahini",
-          "original": "2 tsp tahini"
-        },
-        {
-          "name": "sriracha sauce",
-          "original": "½ tsp sriracha sauce"
-        },
-        {
-          "name": "garlic",
-          "original": "3 cloves garlic"
-        },
-        {
-          "name": "fresh parsley",
-          "original": "3 tbsp fresh parsley, roughly chopped"
-        },
-        {
-          "name": "red onion",
-          "original": "¼ large red onion, diced"
-        },
-        {
-          "name": "peanut oil",
-          "original": "4 tbsp peanut oil"
-        },
-        {
-          "name": "cucumber",
-          "original": "8 slices of cucumber"
-        },
-        {
-          "name": "tomato",
-          "original": "8 slices of tomato"
-        },
-        {
-          "name": "hamburger buns",
-          "original": "4 hamburger buns (I used President's Choice multi-grain thins)"
-        },
-        {
-          "name": "tzatziki",
-          "original": "Tzatziki for topping"
-        }
-      ],
-      "category": "burger",
-      "rating": 10,
-      "id": 6
     },
     {
       "title": "The Unagi Burger",
@@ -367,9 +309,8 @@
           "original": "4 whole wheat baker's rolls"
         }
       ],
-      "category": "burger",
-      "rating": "7",
-      "id": 7
+      "rating": 7,
+      "id": 6
     }
   ]
 }

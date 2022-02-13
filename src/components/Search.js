@@ -5,7 +5,7 @@ function Search({handleSearch, search}) {
     <div>
       <input
         type="text"
-        placeholder="Search"
+        placeholder="Search by food"
         onChange={handleSearch}
         value={search}
       />

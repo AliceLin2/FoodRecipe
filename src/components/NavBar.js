@@ -1,14 +1,14 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-const linkStyles = {
+const styles = {
   display: "inline-block",
   width: "200px",
-  padding: "12px",
-  margin: "0 6px 6px",
-  background: "blue",
-  textDecoration: "none",
+  padding: "20px",
+  margin: "0 10px 10px",
+  background: "#F39C12",
   color: "white",
+  fontSize: "30px"
 };
 
 function NavBar() {
@@ -17,9 +17,10 @@ function NavBar() {
       <NavLink
         to="/"
         exact
-        style={linkStyles}
+        style={styles}
         activeStyle={{
-          background: "darkblue",
+          background: "#DFFF00",
+          color: "black"
         }}
       >
         Home
@@ -27,9 +28,10 @@ function NavBar() {
       <NavLink
         to="/foodfromAPI"
         exact
-        style={linkStyles}
+        style={styles}
         activeStyle={{
-          background: "darkblue",
+          background: "#DFFF00",
+          color: "black"
         }}
       >
         FoodFromAPI
@@ -37,9 +39,10 @@ function NavBar() {
       <NavLink
         to="/myfoodportfolio"
         exact
-        style={linkStyles}
+        style={styles}
         activeStyle={{
-          background: "darkblue",
+          background: "#DFFF00",
+          color: "black"
         }}
       >
         MyFoodPortfolio
