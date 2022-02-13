@@ -256,6 +256,120 @@
       "category": "steak",
       "rating": 7,
       "id": 5
+    },
+    {
+      "title": "Falafel Burger",
+      "image": "https://spoonacular.com/recipeImages/642539-556x370.png",
+      "ingredients": [
+        {
+          "name": "canned chickpeas",
+          "original": "540 ml can of chickpeas, drained and rinsed"
+        },
+        {
+          "name": "tahini",
+          "original": "2 tsp tahini"
+        },
+        {
+          "name": "sriracha sauce",
+          "original": "½ tsp sriracha sauce"
+        },
+        {
+          "name": "garlic",
+          "original": "3 cloves garlic"
+        },
+        {
+          "name": "fresh parsley",
+          "original": "3 tbsp fresh parsley, roughly chopped"
+        },
+        {
+          "name": "red onion",
+          "original": "¼ large red onion, diced"
+        },
+        {
+          "name": "peanut oil",
+          "original": "4 tbsp peanut oil"
+        },
+        {
+          "name": "cucumber",
+          "original": "8 slices of cucumber"
+        },
+        {
+          "name": "tomato",
+          "original": "8 slices of tomato"
+        },
+        {
+          "name": "hamburger buns",
+          "original": "4 hamburger buns (I used President's Choice multi-grain thins)"
+        },
+        {
+          "name": "tzatziki",
+          "original": "Tzatziki for topping"
+        }
+      ],
+      "category": "burger",
+      "rating": 10,
+      "id": 6
+    },
+    {
+      "title": "The Unagi Burger",
+      "image": "https://spoonacular.com/recipeImages/663357-556x370.jpg",
+      "ingredients": [
+        {
+          "name": "ground beef",
+          "original": "2 pounds ground sirloin beef"
+        },
+        {
+          "name": "panko",
+          "original": "1/2 cup panko"
+        },
+        {
+          "name": "egg",
+          "original": "1 egg"
+        },
+        {
+          "name": "almonds",
+          "original": "1/2 cup sliced almonds"
+        },
+        {
+          "name": "fresh ginger",
+          "original": "1/4 cup fresh ginger"
+        },
+        {
+          "name": "green onions",
+          "original": "1/2 cup green onions sliced"
+        },
+        {
+          "name": "soy sauce",
+          "original": "2 tablespoons soy sauce"
+        },
+        {
+          "name": "salt",
+          "original": "1/2 teaspoon salt"
+        },
+        {
+          "name": "black pepper",
+          "original": "1/2 teaspoon black pepper"
+        },
+        {
+          "name": "sesame oil",
+          "original": "2 teaspoons of sesame oil"
+        },
+        {
+          "name": "broccoli sprouts",
+          "original": "3/4 cup broccoli sprouts"
+        },
+        {
+          "name": "cucumber",
+          "original": "8 pieces shaved cucumber ribbons (2 per burger)"
+        },
+        {
+          "name": "sub rolls",
+          "original": "4 whole wheat baker's rolls"
+        }
+      ],
+      "category": "burger",
+      "rating": "7",
+      "id": 7
     }
   ]
 }
