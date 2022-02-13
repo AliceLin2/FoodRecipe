@@ -5,15 +5,10 @@ function Recipe({food}) {
   const [editMode, setEditMode] = useState(false)
   const {recipeId} = useParams() 
   const [newRating, setNewRating] = useState(0)
-  
-  const match = food.forEach(f=>{
-      console.log(f.id===recipeId)
-      if(f.id===recipeId){
-        return f
-      }
-  })
-  //console.log(match)
-  const ingredientList = food[recipeId-1].ingredients.map(i=>{
+
+  const match = food.filter(f=>{return f.id === parseInt(recipeId)})[0]
+
+  const ingredientList = match.ingredients.map(i=>{
     return <li key={i.name}>{i.original}</li>
   })
 
@@ -21,13 +16,13 @@ function Recipe({food}) {
       if(editMode===false){
         setEditMode(!editMode)
       }else{
-          fetch(`http://localhost:3000/food/${food[recipeId-1].id}`,{
+          fetch(`http://localhost:3000/food/${match.id}`,{
               method:"PATCH",
               headers:{
                   "Content-Type":"application/json"
               },
               body:JSON.stringify({
-                  ...food[recipeId-1],
+                  ...match,
                   rating: newRating
               })
           })
@@ -39,14 +34,14 @@ function Recipe({food}) {
   }
 
   function handleDelete(){
-    fetch(`http://localhost:3000/food/${food[recipeId-1].id}`,{
+    fetch(`http://localhost:3000/food/${match.id}`,{
         method:"DELETE"
     })
   }
 
   return (
     <div>
-      <h2>{food[recipeId-1].title}</h2>
+      <h2>{match.title}</h2>
       <label>Delete Recipe: </label>
       <button name="delete" onClick={e=>handleDelete(e)}>Delete</button>
       <br/>
@@ -60,10 +55,10 @@ function Recipe({food}) {
                     setNewRating(parseInt(e.target.value))
                 }}></input>
             :
-            <p>{`Rating: ${food[recipeId-1].rating}`}</p>
+            <p>{`Rating: ${match.rating}`}</p>
       }
       <br/>
-      <img src={food[recipeId-1].image} alt="recipe" />
+      <img src={match.image} alt="recipe" />
       {ingredientList}
     </div>
   );

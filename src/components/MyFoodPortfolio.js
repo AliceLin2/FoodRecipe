@@ -10,7 +10,7 @@ function MyFoodPortfolio() {
     .then((data) => {
       setFood(data);
     });
-  },[food])
+  },[])
 
   return (
     <div>
