@@ -10,10 +10,10 @@ function App() {
     <div>
       <NavBar />
       <Switch>
-        <Route exact path="/foodfromAPI">
+        <Route path="/foodfromAPI">
           <FoodFromAPI />
         </Route>
-        <Route exact path="/myfoodportfolio">
+        <Route path="/myfoodportfolio">
           <MyFoodPortfolio />
         </Route>
         <Route exact path="/">

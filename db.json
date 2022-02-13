@@ -37,7 +37,7 @@
           "original": "Pomi strained tomato sauce (26 oz.)"
         }
       ],
-      "rating": "7",
+      "rating": 9,
       "category": "pasta",
       "id": 1
     },
@@ -135,7 +135,7 @@
           "original": "1 container vanilla yogurt"
         }
       ],
-      "rating": "9",
+      "rating": 8,
       "category": "dessert",
       "id": 3
     },
@@ -179,6 +179,83 @@
       "category": "soup",
       "rating": "9",
       "id": 4
+    },
+    {
+      "title": "Steak Salad with Chimichurri Sauce",
+      "image": "https://spoonacular.com/recipeImages/1096025-556x370.jpg",
+      "ingredients": [
+        {
+          "name": "flank steak",
+          "original": "1 pound flank steak, 1-inch thick"
+        },
+        {
+          "name": "olive oil",
+          "original": "2 tablespoons olive oil"
+        },
+        {
+          "name": "Salt & Pepper",
+          "original": "salt and pepper to season"
+        },
+        {
+          "name": "red onion",
+          "original": "1 red onion, sliced into 1\" rings"
+        },
+        {
+          "name": "baby bella mushrooms",
+          "original": "4 ounces baby bella mushrooms, quartered"
+        },
+        {
+          "name": "spring mix",
+          "original": "5 ounces spring mix"
+        },
+        {
+          "name": "cherry tomatoes",
+          "original": "1 pint cherry tomatoes, halved"
+        },
+        {
+          "name": "avocado",
+          "original": "1 avocado, sliced"
+        },
+        {
+          "name": "parsley",
+          "original": "1 cup lightly packed fresh parsley"
+        },
+        {
+          "name": "garlic",
+          "original": "2 large cloves garlic"
+        },
+        {
+          "name": "dried thyme",
+          "original": "1 teaspoon dried thyme"
+        },
+        {
+          "name": "red pepper flakes",
+          "original": "1/4 teaspoon red pepper flakes"
+        },
+        {
+          "name": "bone broth",
+          "original": "1/4 cup bone broth"
+        },
+        {
+          "name": "red wine vinegar",
+          "original": "1/4 cup organic red wine vinegar"
+        },
+        {
+          "name": "extra virgin olive oil",
+          "original": "1/4 cup extra virgin olive oil"
+        },
+        {
+          "name": "salt",
+          "original": "1/2 teaspoon salt"
+        },
+        {
+          "name": "black pepper",
+          "original": "1/8 teaspoon freshly ground black pepper"
+        }
+      ],
+      "category": "steak",
+      "rating": 8,
+      "id": 6
     }
   ]
 }
