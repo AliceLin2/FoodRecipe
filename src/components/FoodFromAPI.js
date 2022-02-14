@@ -6,6 +6,7 @@ import Search from "./Search"
 import RecipeDetail from "./RecipeDetail"
 
 
+
 function FoodFromAPI() {
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedFood, setSelectedFood] = useState([]);

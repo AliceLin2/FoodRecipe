@@ -8,9 +8,9 @@ function RecipeDetail({selectedFood, onShowDetail}) {
   })
   
   const ingredientList = ingredients.map(i=>{
-    return <li key={i.name}>{i.original}</li>
+    return <li key={i.original}>{i.original}</li>
   })
- 
+
   function handleCollect(e){
     e.preventDefault()
     fetch('http://localhost:3000/food',{
@@ -29,8 +29,6 @@ function RecipeDetail({selectedFood, onShowDetail}) {
     .then(res=>res.json())
     .then(data=>{
         onShowDetail(false)
-        console.log(e.target)
-        console.log(e.target.value)
     })
   }
 

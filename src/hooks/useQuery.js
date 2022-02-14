@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 
 
+
 function useQuery() {
   const [category, setCategory] = useState("burger");
   const [food, setFood] = useState([]);
