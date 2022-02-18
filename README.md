@@ -1,3 +1,37 @@
+Overview
+
+    Food Recipe APP is an APP where users could find tons of recipes and collect any recipe they are interested in. Users could also give the recipe a raing when they are about to collect it. The ratings would be stored together with recipe details in the JSON server. 
+
+Usage
+       
+    1. register for an API key to "spoonacular API"
+
+    2. const apiKey = "Your API key from step 1", save this variable on the top of useQuery.js and FoodFromAPI.js file
+
+    3. Install JSON Server, then start JSON Server
+
+        npm install -g json-server
+        json-server --watch db.json
+
+    4. open another terminal and enter npm install then enter npm start, when asked whether want to run at another port, enter "yes"
+
+    5. nagivate the website
+
+        1' see Home page first, can navigate to the other two pages by click each link on navigation bar. 
+        2' FoodFromAPI tab, receive the lots of recipes from "spoonacular API" and can change the received results by changing the filter. 
+        3' Users can also search the recipes by keywords.
+        4' click the food image to collect the recipe together with users' own rating about the recipe.
+        5' MyFoodPortfolio tab, the recipes in collection are from users' previous colletion which are saved on JSON.server
+        6' choose each of the recipes in the list by click the link, detail about the recipe will display in section below
+        7' edit the rating using edit button
+        8' delete the recipe from collection by click the delete button
+
+    For more information on navigating the APP, please check out this Youtube link. https://www.youtube.com/watch?v=xj13KLmdjz0
+
+Ralated
+
+    The spoonacular API: https://spoonacular.com/food-api
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
